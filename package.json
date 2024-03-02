@@ -1,0 +1,28 @@
+{
+  "name": "nuxt3-vant-mobile",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.4",
+    "@vant/nuxt": "^1.0.4",
+    "eslint": "^8.57.0",
+    "nuxt-module-eslint-config": "^0.1.0",
+    "typescript": "^5.3.3",
+    "vant": "^4.8.5",
+    "vue-tsc": "^2.0.2"
+  }
+}
