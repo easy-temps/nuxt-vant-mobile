@@ -1,1 +1,1 @@
-# nuxt3-vant-mobile
+# nxm
