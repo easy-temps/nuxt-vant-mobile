@@ -42,5 +42,11 @@
     "jsonc",
     "yaml"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Specify the UI library you need to prompt
+  "common-intellisense.showSlots": false,
+  "common-intellisense.ui": [
+    "vant4"
+  ]
 }
