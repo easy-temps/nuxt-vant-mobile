@@ -9,4 +9,15 @@ export default defineNuxtConfig({
     shim: false,
   },
 
+  postcss: {
+    plugins: {
+      // https://github.com/wswmsword/postcss-mobile-forever
+      'autoprefixer': {},
+      'postcss-mobile-forever': {
+        appSelector: '#app',
+        viewportWidth: 375,
+        maxDisplayWidth: 600,
+      },
+    },
+  },
 })

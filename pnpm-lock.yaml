@@ -31,6 +31,9 @@ devDependencies:
   nuxt-module-eslint-config:
     specifier: ^0.1.0
     version: 0.1.0(@types/eslint@8.56.5)(eslint-ts-patch@8.57.0-0)(nuxt@3.10.3)(typescript@5.4.2)(vite@5.1.5)
+  postcss-mobile-forever:
+    specifier: ^4.1.2
+    version: 4.1.2(postcss@8.4.35)
   typescript:
     specifier: ^5.3.3
     version: 5.4.2
@@ -5894,6 +5897,14 @@ packages:
     dependencies:
       postcss: 8.4.35
       postcss-selector-parser: 6.0.15
+
+  /postcss-mobile-forever@4.1.2(postcss@8.4.35):
+    resolution: {integrity: sha512-o0xt/R/MBclBYPtd5FnR2yxZNzA/iRPxqm4MK5iFkUgInUR/ILt7mSGadnjbXehCdTdb7n6LImy8LpYVgRxDdw==}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: 8.4.35
+    dev: true
 
   /postcss-normalize-charset@6.0.2(postcss@8.4.35):
     resolution: {integrity: sha512-a8N9czmdnrjPHa3DeFlwqst5eaL5W8jYu3EBbTTkI5FHkfMhFZh1EGbku6jhHhIzTA6tquI2P42NtZ59M/H/kQ==}
