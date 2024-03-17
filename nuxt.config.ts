@@ -17,6 +17,7 @@ export default defineNuxtConfig({
         appSelector: '#app',
         viewportWidth: 375,
         maxDisplayWidth: 600,
+        exclude: /node_modules/,
       },
     },
   },
