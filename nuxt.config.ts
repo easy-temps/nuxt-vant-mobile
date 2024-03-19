@@ -2,12 +2,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@vant/nuxt',
+    '@unocss/nuxt',
     'nuxt-module-eslint-config',
   ],
 
   typescript: {
     shim: false,
   },
+
+  css: [
+    '@unocss/reset/tailwind.css',
+  ],
 
   postcss: {
     plugins: {

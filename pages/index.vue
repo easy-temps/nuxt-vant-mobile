@@ -1,25 +1,8 @@
-<script lang="ts" setup>
-
-</script>
-
 <template>
-  <div id="app">
-    <div class="txt">
-      init
-    </div>
+  <div class="text-16 text-gray-800">
+    你好
   </div>
 </template>
 
 <style scoped>
-#app {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-}
-
-.txt {
-  position: relative;
-  top: 10px;
-  transform: translateY(-10px);
-}
 </style>

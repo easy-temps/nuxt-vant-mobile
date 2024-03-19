@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.7.0",
+    "@unocss/nuxt": "^0.58.6",
+    "@unocss/preset-rem-to-px": "^0.58.6",
     "@vant/nuxt": "^1.0.4",
     "eslint": "npm:eslint-ts-patch@^8.57.0-0",
     "eslint-ts-patch": "^8.57.0-0",
