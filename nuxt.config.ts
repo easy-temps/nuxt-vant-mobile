@@ -1,3 +1,5 @@
+import { appDescription } from './constants/index'
+
 export default defineNuxtConfig({
   modules: [
     '@vant/nuxt',
@@ -20,6 +22,19 @@ export default defineNuxtConfig({
         maxDisplayWidth: 600,
         // exclude: /node_modules/,
       },
+    },
+  },
+
+  app: {
+    head: {
+      viewport: 'width=device-width,initial-scale=1,viewport-fit=cover',
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
+        { name: 'description', content: appDescription },
+      ],
     },
   },
 
