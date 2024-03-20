@@ -1,22 +1,26 @@
+<script setup lang="ts">
+import type { ConfigProviderTheme } from 'vant'
+const mode = ref<ConfigProviderTheme>('light')
+
+</script>
+
 <template>
-  <div id="app">
+  <VanConfigProvider :theme="mode">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </div>
+  </VanConfigProvider>
 </template>
 
 <style>
-html,
-body,
 #__nuxt {
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-#app {
-  width: 100%;
-  height: 100%;
+html {
+  background: var(--van-gray-1);
+  color-scheme: light;
 }
 </style>

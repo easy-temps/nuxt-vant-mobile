@@ -1,14 +1,9 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   modules: [
     '@vant/nuxt',
     '@unocss/nuxt',
     'nuxt-module-eslint-config',
   ],
-
-  typescript: {
-    shim: false,
-  },
 
   css: [
     '@unocss/reset/tailwind.css',
@@ -16,14 +11,19 @@ export default defineNuxtConfig({
 
   postcss: {
     plugins: {
-      // https://github.com/wswmsword/postcss-mobile-forever
       'autoprefixer': {},
+
+      // https://github.com/wswmsword/postcss-mobile-forever
       'postcss-mobile-forever': {
-        appSelector: '#app',
+        appSelector: '#__nuxt',
         viewportWidth: 375,
         maxDisplayWidth: 600,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
       },
     },
   },
+
+  devtools: { enabled: true },
+
+  typescript: { shim: false },
 })
