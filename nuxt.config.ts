@@ -20,7 +20,8 @@ export default defineNuxtConfig({
         appSelector: '#__nuxt',
         viewportWidth: 375,
         maxDisplayWidth: 600,
-        // exclude: /node_modules/,
+        // devtools excluded
+        exclude: /@nuxt/,
       },
     },
   },
