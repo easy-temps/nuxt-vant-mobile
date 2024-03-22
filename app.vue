@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { appName } from '~/constants'
 import type { ConfigProviderTheme } from 'vant'
+import { appName } from '~/constants'
+
 const mode = ref<ConfigProviderTheme>('light')
 
 useHead({
   title: appName,
 })
-
 </script>
 
 <template>
