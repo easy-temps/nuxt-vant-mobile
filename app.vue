@@ -28,4 +28,9 @@ html {
   background: var(--van-gray-1);
   color-scheme: light;
 }
+
+html.dark {
+  background: #222;
+  color-scheme: dark;
+}
 </style>

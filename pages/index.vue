@@ -7,10 +7,21 @@ const menuItems = [
   { title: '🙅 404页 演示', route: 'unknown' },
 ]
 
+const color = useColorMode()
+
+useHead({
+  meta: [{
+    id: 'theme-color',
+    name: 'theme-color',
+    content: () => color.value === 'dark' ? '#222222' : '#ffffff',
+  }],
+})
+
 const checked = ref<boolean>(false)
 
-function toggle() {
-  checked.value = !checked.value
+function toggleDark() {
+  checked.value = color.value === 'dark'
+  color.preference = color.value === 'dark' ? 'light' : 'dark'
 }
 </script>
 
@@ -25,7 +36,7 @@ function toggle() {
           v-model="checked"
           size="20px"
           aria-label="on/off Dark Mode"
-          @click="toggle()"
+          @click="toggleDark"
         />
       </template>
     </VanCell>

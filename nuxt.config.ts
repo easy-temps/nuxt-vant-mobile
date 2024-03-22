@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@vant/nuxt',
     '@unocss/nuxt',
     'nuxt-module-eslint-config',
+    '@nuxtjs/color-mode',
   ],
 
   css: [
@@ -26,6 +27,10 @@ export default defineNuxtConfig({
     },
   },
 
+  colorMode: {
+    classSuffix: '',
+  },
+
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1,viewport-fit=cover',
@@ -35,6 +40,8 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'description', content: appDescription },
+        { name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#ffffff' },
+        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
       ],
     },
   },
