@@ -2,11 +2,13 @@
 import type { ConfigProviderTheme } from 'vant'
 import { appName } from '~/constants'
 
-const mode = ref<ConfigProviderTheme>('light')
-
 useHead({
   title: appName,
 })
+
+const color = useColorMode()
+const mode = computed(() => color.value as ConfigProviderTheme)
+
 </script>
 
 <template>
