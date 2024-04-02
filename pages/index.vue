@@ -30,10 +30,7 @@ function toggleDark() {
 </script>
 
 <template>
-  <ColorScheme
-    placeholder="正在加载"
-    tag="span"
-  >
+  <ClientOnly>
     <VanCellGroup inset>
       <VanCell
         center
@@ -61,5 +58,5 @@ function toggleDark() {
         />
       </template>
     </VanCellGroup>
-  </ColorScheme>
+  </ClientOnly>
 </template>
