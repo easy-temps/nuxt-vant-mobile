@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   modules: [
     '@vant/nuxt',
     '@unocss/nuxt',
-    'nuxt-module-eslint-config',
     '@nuxtjs/color-mode',
+    '@nuxt/eslint',
   ],
 
   css: [
@@ -49,4 +49,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   typescript: { shim: false },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
 })
