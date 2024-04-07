@@ -8,14 +8,15 @@ useHead({
 
 const color = useColorMode()
 const mode = computed(() => color.value as ConfigProviderTheme)
-
 </script>
 
 <template>
   <VanConfigProvider :theme="mode">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <ColorScheme tag="div">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </ColorScheme>
   </VanConfigProvider>
 </template>
 

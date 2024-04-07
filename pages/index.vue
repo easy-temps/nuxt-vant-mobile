@@ -30,33 +30,31 @@ function toggleDark() {
 </script>
 
 <template>
-  <ClientOnly>
-    <VanCellGroup inset>
-      <VanCell
-        center
-        title="🌗 暗黑模式"
-      >
-        <template #right-icon>
-          <VanSwitch
-            v-model="checked"
-            size="20px"
-            aria-label="on/off Dark Mode"
-            @click="toggleDark"
-          />
-        </template>
-      </VanCell>
-
-      <template
-        v-for="item in menuItems"
-        :key="item.route"
-      >
-        <!-- item.route -->
-        <VanCell
-          :title="item.title"
-          to="/"
-          is-link
+  <VanCellGroup inset>
+    <VanCell
+      center
+      title="🌗 暗黑模式"
+    >
+      <template #right-icon>
+        <VanSwitch
+          v-model="checked"
+          size="20px"
+          aria-label="on/off Dark Mode"
+          @click="toggleDark"
         />
       </template>
-    </VanCellGroup>
-  </ClientOnly>
+    </VanCell>
+
+    <template
+      v-for="item in menuItems"
+      :key="item.route"
+    >
+      <!-- item.route -->
+      <VanCell
+        :title="item.title"
+        to="/"
+        is-link
+      />
+    </template>
+  </VanCellGroup>
 </template>
