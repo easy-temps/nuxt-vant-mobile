@@ -19,7 +19,7 @@ useHead({
 
 const checked = computed({
   get: () => color.value === 'dark',
-  set: (val) => {
+  set: (val: boolean) => {
     return val
   },
 })
