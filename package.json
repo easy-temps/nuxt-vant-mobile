@@ -2,6 +2,7 @@
   "name": "nuxt3-vant-mobile",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@8.15.6",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,7 +10,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.4.0",
@@ -19,6 +21,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.13.3",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "@nuxt/eslint": "^0.3.6",
     "@unocss/eslint-plugin": "^0.59.1",
     "@unocss/nuxt": "^0.59.1",
@@ -26,10 +30,19 @@
     "@vant/nuxt": "^1.0.4",
     "eslint": "8.57.0",
     "eslint-plugin-format": "^0.1.0",
+    "lint-staged": "^15.2.2",
     "postcss-mobile-forever": "^4.1.2",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.4.5",
     "vant": "^4.8.10",
     "vue-tsc": "^2.0.13"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint \\${1}"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   },
   "browserslist": [
     "defaults"
