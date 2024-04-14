@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'home',
+})
+
 const menuItems = [
   { title: '💿 Mock 指南', route: 'mock' },
   { title: '📊 Echarts 演示', route: 'charts' },
