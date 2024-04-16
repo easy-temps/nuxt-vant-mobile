@@ -2,7 +2,7 @@
   "name": "nuxt3-vant-mobile",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@8.15.7",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -39,7 +39,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
-    "commit-msg": "pnpm commitlint \\${1}"
+    "commit-msg": "pnpm commitlint $1"
   },
   "lint-staged": {
     "*": "eslint --fix"

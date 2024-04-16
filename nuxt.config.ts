@@ -50,6 +50,11 @@ export default defineNuxtConfig({
 
   typescript: { shim: false },
 
+  features: {
+    // For UnoCSS
+    inlineStyles: false,
+  },
+
   eslint: {
     config: {
       standalone: false,

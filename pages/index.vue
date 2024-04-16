@@ -4,11 +4,10 @@ definePageMeta({
 })
 
 const menuItems = [
-  { title: '💿 Mock 指南', route: 'mock' },
-  { title: '📊 Echarts 演示', route: 'charts' },
   { title: '🎨 Unocss 示例', route: 'unocss' },
   { title: '🍍 持久化 Pinia 状态', route: 'counter' },
   { title: '🙅 404页 演示', route: 'unknown' },
+  { title: '🧡 KeepAlive 演示', route: 'keepalive' },
 ]
 
 const color = useColorMode()
@@ -53,10 +52,9 @@ function toggleDark() {
       v-for="item in menuItems"
       :key="item.route"
     >
-      <!-- item.route -->
       <VanCell
         :title="item.title"
-        to="/"
+        :to="item.route"
         is-link
       />
     </template>
