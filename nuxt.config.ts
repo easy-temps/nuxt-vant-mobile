@@ -23,6 +23,10 @@ export default defineNuxtConfig({
         maxDisplayWidth: 600,
         // devtools excluded
         exclude: /@nuxt/,
+        rootContainingBlockSelectorList: [
+          'van-tabbar',
+          'van-popup',
+        ],
       },
     },
   },
