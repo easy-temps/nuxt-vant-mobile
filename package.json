@@ -2,7 +2,7 @@
   "name": "nuxt3-vant-mobile",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.7",
+  "packageManager": "pnpm@9.0.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.4.0",
     "nuxt": "^3.11.2",
-    "vue": "^3.4.22",
+    "vue": "^3.4.23",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
@@ -25,9 +25,9 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@iconify-json/carbon": "^1.1.31",
     "@nuxt/eslint": "^0.3.7",
-    "@unocss/eslint-plugin": "^0.59.2",
-    "@unocss/nuxt": "^0.59.2",
-    "@unocss/preset-rem-to-px": "^0.59.2",
+    "@unocss/eslint-plugin": "^0.59.3",
+    "@unocss/nuxt": "^0.59.3",
+    "@unocss/preset-rem-to-px": "^0.59.3",
     "@vant/nuxt": "^1.0.4",
     "eslint": "8.57.0",
     "eslint-plugin-format": "^0.1.0",
