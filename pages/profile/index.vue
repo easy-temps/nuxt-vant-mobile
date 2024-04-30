@@ -6,6 +6,6 @@ definePageMeta({
 
 <template>
   <div mx-auto mb-60 pt-15 text-center text-16 text-dark dark:text-white>
-    未完成
+    {{ $t('profile_page.txt') }}
   </div>
 </template>

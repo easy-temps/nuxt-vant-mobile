@@ -16,7 +16,7 @@ function onBack() {
 
     <div class="mt-10">
       <button van-haptics-feedback btn m="3 t8" @click="onBack">
-        Back
+        {{ $t('error_page.back_btn') }}
       </button>
     </div>
   </main>

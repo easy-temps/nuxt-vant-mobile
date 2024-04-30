@@ -1,4 +1,5 @@
 import { appDescription } from './constants/index'
+import { currentLocales } from './config/i18n'
 
 export default defineNuxtConfig({
   modules: [
@@ -6,6 +7,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/eslint',
+    '@nuxtjs/i18n',
   ],
 
   css: [
@@ -33,6 +35,16 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+  },
+
+  i18n: {
+    locales: currentLocales,
+    lazy: true,
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false,
+    langDir: 'locales',
+    defaultLocale: 'zh-CN',
+    vueI18n: './config/i18n.config.ts',
   },
 
   app: {

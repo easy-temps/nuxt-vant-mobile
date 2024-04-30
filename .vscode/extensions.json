@@ -4,6 +4,7 @@
     "vue.vscode-typescript-vue-plugin",
     "vue.volar",
     "dbaeumer.vscode-eslint",
-    "antfu.iconify"
+    "antfu.iconify",
+    "lokalise.i18n-ally"
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "darkMode": "🌗 Dark Mode",
+    "language": "📚 Language",
+    "404Demo": "🙅 Page 404 Demo",
+    "unocssExample": "🎨 Unocss example",
+    "keepAlive": "🧡 KeepAlive Demo"
+  },
+  "tabbar": {
+    "home": "Home",
+    "profile": "Profile"
+  },
+  "unocss_page": {
+    "hello": "Hello {0}",
+    "desc": "This is a simple example of Unocss in action.",
+    "btn_txt": "Button"
+  },
+  "error_page": {
+    "back_btn": "Back",
+    "txt": "Not found"
+  },
+  "profile_page": {
+    "txt": "WIP"
+  }
+}

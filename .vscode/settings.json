@@ -3,6 +3,21 @@
     "*.css": "postcss"
   },
 
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": [
+    "locales"
+  ],
+  "i18n-ally.sourceLanguage": "zh-CN",
+  "i18n-ally.displayLanguage": "zh-CN",
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Specify the UI library you need to prompt
+  "common-intellisense.showSlots": false,
+  "common-intellisense.ui": [
+    "vant4"
+  ],
+
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
 
@@ -41,12 +56,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-  "typescript.tsdk": "node_modules/typescript/lib",
-
-  // Specify the UI library you need to prompt
-  "common-intellisense.showSlots": false,
-  "common-intellisense.ui": [
-    "vant4"
   ]
 }
