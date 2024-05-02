@@ -12,6 +12,9 @@ export default defineNuxtConfig({
 
   css: [
     '@unocss/reset/tailwind.css',
+    '~/styles/vars.css',
+    '~/styles/global.css',
+    '~/styles/default-theme.css',
   ],
 
   postcss: {

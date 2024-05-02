@@ -15,7 +15,7 @@ import presetRemToPx from '@unocss/preset-rem-to-px'
 export default defineConfig({
   shortcuts: [
     // shortcuts to multiple utilities
-    ['btn', 'px-6 py-3 rounded-3 border-none inline-block bg-green-400 text-white cursor-pointer hover:bg-green-600 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['btn', 'px-6 py-3 rounded-3 inline-block bg-primary text-white cursor-pointer hover:bg-primary-hover disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
   ],
 
   presets: [
@@ -33,4 +33,13 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+
+  theme: {
+    colors: {
+      primary: {
+        DEFAULT: 'var(--c-primary)',
+        hover: 'var(--c-primary-active)',
+      },
+    },
+  },
 })

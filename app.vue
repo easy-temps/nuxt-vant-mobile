@@ -13,27 +13,10 @@ const mode = computed(() => color.value as ConfigProviderTheme)
 <template>
   <VanConfigProvider :theme="mode">
     <ColorScheme tag="div">
+      <NuxtLoadingIndicator />
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
     </ColorScheme>
   </VanConfigProvider>
 </template>
-
-<style>
-#__nuxt {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  background: var(--van-gray-1);
-  color-scheme: light;
-}
-
-html.dark {
-  background: #222;
-  color-scheme: dark;
-}
-</style>
