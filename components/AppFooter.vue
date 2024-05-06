@@ -1,9 +1,19 @@
 <script setup lang="ts">
+import { useAppFooterRouteNames as names } from '~/config'
+
+const route = useRoute()
+
 const active = ref(0)
+
+const display = computed(() => {
+  if (route.name && names.includes(route.name))
+    return true
+  return false
+})
 </script>
 
 <template>
-  <van-tabbar v-model="active" route>
+  <van-tabbar v-show="display" v-model="active" route>
     <van-tabbar-item replace to="/">
       <span>{{ $t('tabbar.home') }}</span>
       <template #icon>

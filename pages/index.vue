@@ -4,10 +4,6 @@ import type { ComputedRef } from 'vue'
 import type { LocaleObject } from '@nuxtjs/i18n'
 import { Locale } from 'vant'
 
-definePageMeta({
-  layout: 'home',
-})
-
 const color = useColorMode()
 
 useHead({
@@ -40,8 +36,8 @@ const { locales } = useI18n() as { locales: ComputedRef<LocaleObject[]> }
 
 const menus = computed(() => [
   { title: t('menu.unocssExample'), route: 'unocss' },
-  { title: t('menu.404Demo'), route: 'unknown' },
   { title: t('menu.keepAlive'), route: 'keepalive' },
+  { title: t('menu.404Demo'), route: 'unknown' },
 ])
 
 function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {

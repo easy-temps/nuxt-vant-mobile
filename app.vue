@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ConfigProviderTheme } from 'vant'
+import useKeepalive from '~/composables/keepalive'
 import { appName } from '~/constants'
 
 useHead({
@@ -8,6 +9,10 @@ useHead({
 
 const color = useColorMode()
 const mode = computed(() => color.value as ConfigProviderTheme)
+
+const keepAliveRouteNames = computed(() => {
+  return useKeepalive().routeCaches as string[]
+})
 </script>
 
 <template>
@@ -15,7 +20,7 @@ const mode = computed(() => color.value as ConfigProviderTheme)
     <ColorScheme tag="div">
       <NuxtLoadingIndicator />
       <NuxtLayout>
-        <NuxtPage />
+        <NuxtPage :keepalive="{ include: keepAliveRouteNames }" />
       </NuxtLayout>
     </ColorScheme>
   </VanConfigProvider>

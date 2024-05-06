@@ -21,5 +21,8 @@
   },
   "profile_page": {
     "txt": "WIP"
+  },
+  "keepalive_page": {
+    "label": "The current component will be cached"
   }
 }

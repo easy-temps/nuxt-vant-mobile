@@ -21,5 +21,8 @@
   },
   "profile_page": {
     "txt": "未完成"
+  },
+  "keepalive_page": {
+    "label": "当前组件将会被缓存"
   }
 }

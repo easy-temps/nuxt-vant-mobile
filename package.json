@@ -26,6 +26,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@iconify-json/carbon": "^1.1.32",
     "@nuxt/eslint": "^0.3.10",
+    "@pinia/nuxt": "^0.5.1",
     "@unocss/eslint-plugin": "^0.59.4",
     "@unocss/nuxt": "^0.59.4",
     "@unocss/preset-rem-to-px": "^0.59.4",

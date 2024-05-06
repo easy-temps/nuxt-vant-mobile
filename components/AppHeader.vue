@@ -20,6 +20,7 @@ const title = computed(() => {
 
 <template>
   <VanNavBar
+    v-show="title"
     :title="title"
     :fixed="true"
     clickable left-arrow
