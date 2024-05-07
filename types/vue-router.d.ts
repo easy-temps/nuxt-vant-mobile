@@ -1,5 +1,3 @@
-import 'vue-router'
-
 declare module 'vue-router' {
   interface RouteMeta {
     /** page title */
@@ -8,3 +6,5 @@ declare module 'vue-router' {
     i18n?: string
   }
 }
+
+export {}
