@@ -4,6 +4,10 @@ import type { ComputedRef } from 'vue'
 import type { LocaleObject } from '@nuxtjs/i18n'
 import { Locale } from 'vant'
 
+definePageMeta({
+  level: 1,
+})
+
 const color = useColorMode()
 
 useHead({
@@ -52,37 +56,39 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 </script>
 
 <template>
-  <VanCellGroup inset>
-    <VanCell :title="$t('menu.darkMode')" center>
-      <template #right-icon>
-        <VanSwitch
-          v-model="checked"
-          size="20px"
-          aria-label="on/off Dark Mode"
-          @click="toggleDark"
-        />
-      </template>
-    </VanCell>
+  <Container :padding-x="0">
+    <VanCellGroup inset>
+      <VanCell :title="$t('menu.darkMode')" center>
+        <template #right-icon>
+          <VanSwitch
+            v-model="checked"
+            size="20px"
+            aria-label="on/off Dark Mode"
+            @click="toggleDark"
+          />
+        </template>
+      </VanCell>
 
-    <VanCell
-      :title="$t('menu.language')"
-      :value="locales.find(i => i.code === i18n.locale.value)?.name"
-      is-link
-      @click="showLanguagePicker = true"
-    />
-
-    <van-popup v-model:show="showLanguagePicker" position="bottom">
-      <van-picker
-        v-model="languageValues"
-        :columns="locales"
-        :columns-field-names="{ text: 'name', value: 'code' }"
-        @confirm="onLanguageConfirm"
-        @cancel="showLanguagePicker = false"
+      <VanCell
+        :title="$t('menu.language')"
+        :value="locales.find(i => i.code === i18n.locale.value)?.name"
+        is-link
+        @click="showLanguagePicker = true"
       />
-    </van-popup>
 
-    <template v-for="item in menus" :key="item.route">
-      <VanCell :title="item.title" :to="item.route" is-link />
-    </template>
-  </VanCellGroup>
+      <van-popup v-model:show="showLanguagePicker" position="bottom">
+        <van-picker
+          v-model="languageValues"
+          :columns="locales"
+          :columns-field-names="{ text: 'name', value: 'code' }"
+          @confirm="onLanguageConfirm"
+          @cancel="showLanguagePicker = false"
+        />
+      </van-popup>
+
+      <template v-for="item in menus" :key="item.route">
+        <VanCell :title="item.title" :to="item.route" is-link />
+      </template>
+    </VanCellGroup>
+  </Container>
 </template>

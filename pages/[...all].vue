@@ -5,5 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div> {{ $t('error_page.txt') }} </div>
+  <Container>
+    <div> {{ $t('error_page.txt') }} </div>
+  </Container>
 </template>

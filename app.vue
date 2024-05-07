@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ConfigProviderTheme } from 'vant'
+import useRouteTransitionName from '~/composables/transitions'
 import useKeepalive from '~/composables/keepalive'
 import { appName } from '~/constants'
 
@@ -8,19 +9,26 @@ useHead({
 })
 
 const color = useColorMode()
-const mode = computed(() => color.value as ConfigProviderTheme)
+
+const mode = computed(() => {
+  return color.value as ConfigProviderTheme
+})
 
 const keepAliveRouteNames = computed(() => {
   return useKeepalive().routeCaches as string[]
+})
+
+const transitionName = computed(() => {
+  return useRouteTransitionName().routeTransitionName
 })
 </script>
 
 <template>
   <VanConfigProvider :theme="mode">
     <ColorScheme tag="div">
-      <NuxtLoadingIndicator />
+      <NuxtLoadingIndicator color="repeating-linear-gradient(to right,var(--c-primary) 0%,var(--c-primary-active) 100%)" />
       <NuxtLayout>
-        <NuxtPage :keepalive="{ include: keepAliveRouteNames }" />
+        <NuxtPage :keepalive="{ include: keepAliveRouteNames }" :transition="{ name: transitionName }" />
       </NuxtLayout>
     </ColorScheme>
   </VanConfigProvider>
