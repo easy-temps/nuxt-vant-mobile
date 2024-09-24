@@ -1,6 +1,6 @@
+import { Locale } from 'vant'
 import enUS from 'vant/es/locale/lang/en-US'
 import zhCN from 'vant/es/locale/lang/zh-CN'
-import { Locale } from 'vant'
 
 export default defineNuxtPlugin(() => {
   // 载入 vant 语言包

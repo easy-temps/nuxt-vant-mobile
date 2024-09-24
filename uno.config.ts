@@ -1,3 +1,5 @@
+import presetRemToPx from '@unocss/preset-rem-to-px'
+
 import {
   defineConfig,
   presetAttributify,
@@ -8,8 +10,6 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-
-import presetRemToPx from '@unocss/preset-rem-to-px'
 
 // https://unocss.dev/guide/config-file
 export default defineConfig({

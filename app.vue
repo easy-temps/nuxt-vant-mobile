@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ConfigProviderTheme } from 'vant'
-import useRouteTransitionName from '~/composables/transitions'
 import useKeepalive from '~/composables/keepalive'
+import useRouteTransitionName from '~/composables/transitions'
 import { appName } from '~/constants'
 
 useHead({

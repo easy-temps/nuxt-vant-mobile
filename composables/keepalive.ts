@@ -1,5 +1,5 @@
-import { defineStore } from 'pinia'
 import type { RouteLocationNormalized, RouteRecordName } from 'vue-router'
+import { defineStore } from 'pinia'
 
 const useKeepalive = defineStore('keepalive', () => {
   const routeCaches = ref<RouteRecordName[]>([])

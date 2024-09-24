@@ -1,6 +1,6 @@
+import type { RouteLocationNormalized } from '#vue-router'
 import useKeepalive from '~/composables/keepalive'
 import routeTransitionNameStore from '~/composables/transitions'
-import type { RouteLocationNormalized } from '#vue-router'
 
 export default defineNuxtRouteMiddleware((to: RouteLocationNormalized, from) => {
   // KeepAlive

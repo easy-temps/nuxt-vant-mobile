@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import type { LocaleObject } from '@nuxtjs/i18n'
 import type { PickerColumn } from 'vant'
 import type { ComputedRef } from 'vue'
-import type { LocaleObject } from '@nuxtjs/i18n'
 import { Locale } from 'vant'
 
 definePageMeta({
