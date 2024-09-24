@@ -1,5 +1,5 @@
-import { appDescription } from './constants/index'
 import { currentLocales } from './config/i18n'
+import { appDescription } from './constants/index'
 
 export default defineNuxtConfig({
   modules: [
@@ -67,7 +67,6 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-
   typescript: { shim: false },
 
   features: {
@@ -80,4 +79,6 @@ export default defineNuxtConfig({
       standalone: false,
     },
   },
+
+  compatibilityDate: '2024-09-24',
 })
