@@ -1,5 +1,5 @@
-import { currentLocales } from './config/i18n'
-import { appDescription } from './constants/index'
+import { currentLocales } from './app/config/i18n'
+import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
   modules: [
@@ -11,11 +11,15 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
 
+  experimental: {
+    typedPages: true,
+  },
+
   css: [
     '@unocss/reset/tailwind.css',
-    '~/styles/vars.css',
-    '~/styles/global.css',
-    '~/styles/default-theme.css',
+    './app/styles/vars.css',
+    './app/styles/global.css',
+    './app/styles/default-theme.css',
   ],
 
   postcss: {
@@ -48,7 +52,7 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     langDir: 'locales',
     defaultLocale: 'zh-CN',
-    vueI18n: './config/i18n.config.ts',
+    vueI18n: './app/config/i18n.config.ts',
   },
 
   app: {
@@ -66,8 +70,13 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: { enabled: true },
-  typescript: { shim: false },
+  devtools: {
+    enabled: true,
+  },
+
+  typescript: {
+    shim: false,
+  },
 
   features: {
     // For UnoCSS
@@ -78,6 +87,10 @@ export default defineNuxtConfig({
     config: {
       standalone: false,
     },
+  },
+
+  future: {
+    compatibilityVersion: 4,
   },
 
   compatibilityDate: '2024-09-24',

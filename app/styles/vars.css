@@ -1,7 +1,7 @@
 :root {
   --c-primary: rgb(var(--c-primary-500));
   --c-primary-active: rgb(var(--c-primary-600));
-  
+
   /* main color ratio */
   --c-primary-100: 217 251 232;
   --c-primary-200: 179 245 209;
