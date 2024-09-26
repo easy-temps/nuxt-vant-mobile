@@ -2,12 +2,11 @@
 definePageMeta({
   title: '🎨 Unocss 示例',
   i18n: 'menu.unocssExample',
-  level: 2,
 })
 </script>
 
 <template>
-  <Container>
+  <div>
     <h1 class="text-6xl color-pink font-semibold">
       {{ $t('unocss_page.hello', ['Unocss!']) }}
     </h1>
@@ -19,5 +18,5 @@ definePageMeta({
     <button class="mt-10 btn">
       {{ $t('unocss_page.btn_txt') }}
     </button>
-  </Container>
+  </div>
 </template>

@@ -4,10 +4,6 @@ import type { PickerColumn } from 'vant'
 import type { ComputedRef } from 'vue'
 import { Locale } from 'vant'
 
-definePageMeta({
-  level: 1,
-})
-
 const color = useColorMode()
 
 useHead({
@@ -45,7 +41,7 @@ const menus = computed(() => [
 ])
 
 function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
-  const lang = event.selectedOptions[0].code
+  const lang = event.selectedOptions[0]?.code
 
   setLocale(lang)
   Locale.use(lang)
@@ -56,7 +52,7 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 </script>
 
 <template>
-  <Container :padding-x="0">
+  <div>
     <VanCellGroup inset>
       <VanCell :title="$t('menu.darkMode')" center>
         <template #right-icon>
@@ -76,19 +72,19 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
         @click="showLanguagePicker = true"
       />
 
-      <van-popup v-model:show="showLanguagePicker" position="bottom">
-        <van-picker
-          v-model="languageValues"
-          :columns="locales"
-          :columns-field-names="{ text: 'name', value: 'code' }"
-          @confirm="onLanguageConfirm"
-          @cancel="showLanguagePicker = false"
-        />
-      </van-popup>
-
       <template v-for="item in menus" :key="item.route">
         <VanCell :title="item.title" :to="item.route" is-link />
       </template>
     </VanCellGroup>
-  </Container>
+
+    <van-popup v-model:show="showLanguagePicker" position="bottom">
+      <van-picker
+        v-model="languageValues"
+        :columns="locales"
+        :columns-field-names="{ text: 'name', value: 'code' }"
+        @confirm="onLanguageConfirm"
+        @cancel="showLanguagePicker = false"
+      />
+    </van-popup>
+  </div>
 </template>

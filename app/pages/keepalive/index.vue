@@ -8,15 +8,14 @@ definePageMeta({
   keepalive: true,
   title: '🧡 KeepAlive',
   i18n: 'menu.keepAlive',
-  level: 2,
 })
 
 const value = ref(1)
 </script>
 
 <template>
-  <Container>
-    <p>{{ $t('keepalive_page.label') }}</p>
-    <van-stepper v-model="value" />
-  </Container>
+  <div>
+    <p> {{ $t('keepalive_page.label') }} </p>
+    <van-stepper v-model="value" class="mt-10" />
+  </div>
 </template>
