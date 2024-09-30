@@ -4,7 +4,8 @@
     "language": "📚 Language",
     "404Demo": "🙅 Page 404 Demo",
     "unocssExample": "🎨 Unocss example",
-    "keepAlive": "🧡 KeepAlive Demo"
+    "keepAlive": "🧡 KeepAlive Demo",
+    "persistPiniaState": "💾 Persist Pinia State"
   },
   "tabbar": {
     "home": "Home",
@@ -24,5 +25,10 @@
   },
   "keepalive_page": {
     "label": "The current component will be cached"
+  },
+  "counter_page": {
+    "label": "This is a simple example of persisting Pinia state. To verify its effectiveness, you can refresh the interface and observe it.",
+    "label_num": "Number",
+    "btn_add": "Add"
   }
 }

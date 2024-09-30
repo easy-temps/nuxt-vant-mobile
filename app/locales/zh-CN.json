@@ -4,7 +4,8 @@
     "language": "📚 语言",
     "404Demo": "🙅 404页 演示",
     "unocssExample": "🎨 Unocss 示例",
-    "keepAlive": "🧡 KeepAlive 演示"
+    "keepAlive": "🧡 KeepAlive 演示",
+    "persistPiniaState": "💾 持久化 Pinia 状态"
   },
   "tabbar": {
     "home": "主页",
@@ -24,5 +25,10 @@
   },
   "keepalive_page": {
     "label": "当前组件将会被缓存"
+  },
+  "counter_page": {
+    "label": "这是一个简单的持久化 Pinia 状态的例子。为了验证其有效性，你可以刷新界面并观察它。",
+    "label_num": "数字",
+    "btn_add": "增加"
   }
 }

@@ -17,6 +17,7 @@
     "@nuxtjs/color-mode": "^3.5.1",
     "@nuxtjs/i18n": "^8.5.5",
     "nuxt": "^3.13.2",
+    "pinia-plugin-persistedstate": "^4.0.2",
     "vue": "^3.5.8",
     "vue-router": "^4.4.5"
   },
@@ -45,6 +46,14 @@
       "allowedVersions": {
         "meow": "^12.x"
       }
+    },
+    "allowedDeprecatedVersions": {
+      "glob": "*",
+      "are-we-there-yet": "2",
+      "gauge": "3",
+      "inflight": "1",
+      "npmlog": "5",
+      "rimraf": "3"
     }
   },
   "simple-git-hooks": {

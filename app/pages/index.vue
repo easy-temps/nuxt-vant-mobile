@@ -37,6 +37,7 @@ const { locales } = useI18n() as { locales: ComputedRef<LocaleObject[]> }
 const menus = computed(() => [
   { title: t('menu.unocssExample'), route: 'unocss' },
   { title: t('menu.keepAlive'), route: 'keepalive' },
+  { title: t('menu.persistPiniaState'), route: 'counter' },
   { title: t('menu.404Demo'), route: 'unknown' },
 ])
 
