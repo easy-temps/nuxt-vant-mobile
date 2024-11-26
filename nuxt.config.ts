@@ -1,5 +1,5 @@
-import { currentLocales } from './app/config/i18n'
 import { appDescription } from './app/constants/index'
+import { currentLocales } from './i18n/i18n'
 
 export default defineNuxtConfig({
   modules: [
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     langDir: 'locales',
     defaultLocale: 'zh-CN',
-    vueI18n: './app/config/i18n.config.ts',
+    vueI18n: './i18n/i18n.config.ts',
   },
 
   app: {

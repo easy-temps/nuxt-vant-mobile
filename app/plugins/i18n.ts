@@ -2,6 +2,8 @@ import { Locale } from 'vant'
 import enUS from 'vant/es/locale/lang/en-US'
 import zhCN from 'vant/es/locale/lang/zh-CN'
 
+type AppLocale = 'zh-CN' | 'en-US'
+
 export default defineNuxtPlugin(() => {
   // 载入 vant 语言包
   Locale.use('zh-CN', zhCN)
@@ -14,7 +16,7 @@ export default defineNuxtPlugin(() => {
     const lang = localStorage.getItem('lang')
 
     if (lang) {
-      setLocale(lang)
+      setLocale(lang as AppLocale)
       Locale.use(lang)
     }
     else {
