@@ -54,6 +54,9 @@
       "inflight": "1",
       "npmlog": "5",
       "rimraf": "3"
+    },
+    "patchedDependencies": {
+      "@nuxtjs/i18n@9.1.0": "patches/@nuxtjs__i18n@9.1.0.patch"
     }
   },
   "simple-git-hooks": {

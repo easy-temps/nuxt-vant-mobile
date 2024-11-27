@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@nuxtjs/i18n@9.1.0':
+    hash: f7ooybjhk3gbrcmx6vkut3a44i
+    path: patches/@nuxtjs__i18n@9.1.0.patch
+
 importers:
 
   .:
@@ -13,7 +18,7 @@ importers:
         version: 3.5.2(magicast@0.3.5)(rollup@4.27.2)(webpack-sources@3.2.3)
       '@nuxtjs/i18n':
         specifier: ^9.1.0
-        version: 9.1.0(@vue/compiler-dom@3.5.13)(eslint@9.15.0(jiti@2.4.0))(magicast@0.3.5)(rollup@4.27.2)(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))(webpack-sources@3.2.3)
+        version: 9.1.0(patch_hash=f7ooybjhk3gbrcmx6vkut3a44i)(@vue/compiler-dom@3.5.13)(eslint@9.15.0(jiti@2.4.0))(magicast@0.3.5)(rollup@4.27.2)(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))(webpack-sources@3.2.3)
       nuxt:
         specifier: ^3.14.1592
         version: 3.14.1592(@parcel/watcher@2.4.1)(@types/node@20.11.30)(encoding@0.1.13)(eslint@9.15.0(jiti@2.4.0))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.3)(rollup@4.27.2)(terser@5.29.2)(typescript@5.6.3)(vite@5.4.11(@types/node@20.11.30)(terser@5.29.2))(vue-tsc@2.1.10(typescript@5.6.3))(webpack-sources@3.2.3)
@@ -7066,7 +7071,7 @@ snapshots:
       - supports-color
       - webpack-sources
 
-  '@nuxtjs/i18n@9.1.0(@vue/compiler-dom@3.5.13)(eslint@9.15.0(jiti@2.4.0))(magicast@0.3.5)(rollup@4.27.2)(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))(webpack-sources@3.2.3)':
+  '@nuxtjs/i18n@9.1.0(patch_hash=f7ooybjhk3gbrcmx6vkut3a44i)(@vue/compiler-dom@3.5.13)(eslint@9.15.0(jiti@2.4.0))(magicast@0.3.5)(rollup@4.27.2)(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))(webpack-sources@3.2.3)':
     dependencies:
       '@intlify/h3': 0.6.1
       '@intlify/shared': 10.0.4
