@@ -1,10 +1,12 @@
+<!-- markdownlint-disable MD033 MD041 -->
+
 <div align="center">
 
 <img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
 
-<h1 align="center">nuxt④-vant-mobile</h1>
+<h1 align="center">nuxt-vant-mobile</h1>
 
-An mobile web apps template based on the Nuxt ecosystem.
+An mobile web apps template based on the Nuxt _⁴_ ecosystem.
 
 一个基于 Nuxt _⁴_ 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
 
@@ -16,7 +18,7 @@ An mobile web apps template based on the Nuxt ecosystem.
 
 [文档](https://easy-temps.github.io/easy-docs/nuxt3-vant-mobile/) / [交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [反馈](https://github.com/easy-temps/nuxt-vant-mobile/issues)
 
-<a href="https://nuxt-vant-mobile.netlify.app">Live Demo</a>
+<a href="https://nuxt-vant-mobile.netlify.app">🖥 Online Preview</a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1eb0d3f7-69a1-4972-a2b7-9e317ffa5c63/deploy-status)](https://app.netlify.com/sites/nuxt-vant-mobile/deploys)
 
@@ -95,7 +97,7 @@ To build the App, run
 pnpm build
 ```
 
-And you will see the generated file in `.output/public` that ready to be served.
+And you will see the generated file in `.output` that ready to be served.
 
 ### Deploy on Netlify
 
