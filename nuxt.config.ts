@@ -71,6 +71,19 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    build: {
+      target: 'esnext',
+    },
+    optimizeDeps: {
+      include: [
+        '@intlify/core-base',
+        '@intlify/shared',
+        'is-https',
+      ],
+    },
+  },
+
   devtools: {
     enabled: true,
   },
