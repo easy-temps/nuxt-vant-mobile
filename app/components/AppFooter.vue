@@ -5,7 +5,7 @@ const route = useRoute()
 
 const active = ref(0)
 
-const display = computed(() => {
+const show = computed(() => {
   if (route.name && names.includes(route.name))
     return true
   return false
@@ -13,7 +13,7 @@ const display = computed(() => {
 </script>
 
 <template>
-  <van-tabbar v-show="display" v-model="active" route>
+  <van-tabbar v-if="show" v-model="active" route placeholder fixed>
     <van-tabbar-item replace to="/">
       <span>{{ $t('tabbar.home') }}</span>
       <template #icon>

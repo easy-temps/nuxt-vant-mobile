@@ -1,4 +1,5 @@
 import { appDescription } from './app/constants/index'
+import preload from './app/utils/preload'
 import { currentLocales } from './i18n/i18n'
 
 export default defineNuxtConfig({
@@ -34,6 +35,7 @@ export default defineNuxtConfig({
         maxDisplayWidth: 600,
         // devtools excluded
         exclude: /@nuxt/,
+        border: true,
         rootContainingBlockSelectorList: [
           'van-tabbar',
           'van-popup',
@@ -44,13 +46,18 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+    preference: 'system',
+    fallback: 'light',
+    storageKey: 'nuxt-color-mode',
   },
 
   i18n: {
     locales: currentLocales,
     lazy: true,
     strategy: 'no_prefix',
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+    },
     langDir: 'locales',
     defaultLocale: 'zh-CN',
     vueI18n: './i18n/i18n.config.ts',
@@ -65,8 +72,12 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'description', content: appDescription },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
         { name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#ffffff' },
         { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
+      ],
+      script: [
+        { innerHTML: preload(), type: 'text/javascript', tagPosition: 'head' },
       ],
     },
   },

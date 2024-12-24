@@ -4,6 +4,12 @@ import type { PickerColumn } from 'vant'
 import type { ComputedRef } from 'vue'
 import { Locale } from 'vant'
 
+definePageMeta({
+  layout: 'default',
+  title: '主页',
+  i18n: 'menu.home',
+})
+
 const color = useColorMode()
 
 useHead({
@@ -17,13 +23,9 @@ useHead({
 const checked = computed({
   get: () => color.value === 'dark',
   set: (val: boolean) => {
-    return val
+    color.preference = val ? 'dark' : 'light'
   },
 })
-
-function toggleDark() {
-  color.preference = color.value === 'dark' ? 'light' : 'dark'
-}
 
 const { setLocale, t } = useI18n()
 const i18n = useNuxtApp().$i18n
@@ -57,12 +59,13 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
     <VanCellGroup inset>
       <VanCell :title="$t('menu.darkMode')" center>
         <template #right-icon>
-          <VanSwitch
-            v-model="checked"
-            size="20px"
-            aria-label="on/off Dark Mode"
-            @click="toggleDark"
-          />
+          <ClientOnly>
+            <VanSwitch
+              v-model="checked"
+              size="20px"
+              aria-label="on/off Dark Mode"
+            />
+          </ClientOnly>
         </template>
       </VanCell>
 

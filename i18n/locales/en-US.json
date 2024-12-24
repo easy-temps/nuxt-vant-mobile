@@ -1,5 +1,7 @@
 {
   "menu": {
+    "home": "Home",
+    "profile": "Profile",
     "darkMode": "🌗 Dark Mode",
     "language": "📚 Language",
     "404Demo": "🙅 Page 404 Demo",

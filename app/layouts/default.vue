@@ -1,18 +1,8 @@
-<script setup lang="ts">
-import { useAppFooterRouteNames as names } from '~/config'
-
-const route = useRoute()
-
-const classNames = computed(() => {
-  return route.name && names.includes(route.name) ? 'py-20' : 'px-10 pt-60'
-})
-</script>
-
 <template>
-  <main>
-    <AppHeader />
+  <main class="flex flex-col min-h-svh">
+    <AppHeader class="h-[var(--van-nav-bar-height)]" />
 
-    <div :class="classNames">
+    <div class="flex-1 p-16 pb-[var(--van-nav-bar-height)]">
       <slot />
     </div>
 

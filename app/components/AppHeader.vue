@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAppFooterRouteNames as routeWhiteList } from '~/config'
+
 const route = useRoute()
 const router = useRouter()
 
@@ -16,14 +18,15 @@ const title = computed(() => {
     return ''
   return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
 })
+
+const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name))
 </script>
 
 <template>
   <VanNavBar
-    v-show="title"
     :title="title"
-    :fixed="true"
-    clickable left-arrow
+    :left-arrow="!showLeftArrow"
+    placeholder clickable fixed
     @click-left="onBack"
   />
 </template>

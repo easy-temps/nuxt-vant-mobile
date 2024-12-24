@@ -20,11 +20,9 @@ const keepAliveRouteNames = computed(() => {
 
 <template>
   <VanConfigProvider :theme="mode">
-    <ColorScheme tag="div">
-      <NuxtLoadingIndicator color="repeating-linear-gradient(to right,var(--c-primary) 0%,var(--c-primary-active) 100%)" />
-      <NuxtLayout>
-        <NuxtPage :keepalive="{ include: keepAliveRouteNames }" />
-      </NuxtLayout>
-    </ColorScheme>
+    <NuxtLoadingIndicator color="repeating-linear-gradient(to right,var(--c-primary) 0%,var(--c-primary-active) 100%)" />
+    <NuxtLayout>
+      <NuxtPage :keepalive="{ include: keepAliveRouteNames }" />
+    </NuxtLayout>
   </VanConfigProvider>
 </template>
