@@ -7,7 +7,8 @@
     "404Demo": "🙅 Page 404 Demo",
     "unocssExample": "🎨 Unocss example",
     "keepAlive": "🧡 KeepAlive Demo",
-    "persistPiniaState": "💾 Persist Pinia State"
+    "persistPiniaState": "💾 Persist Pinia State",
+    "fetch": "🌐 Network Request"
   },
   "tabbar": {
     "home": "Home",

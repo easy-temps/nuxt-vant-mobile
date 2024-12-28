@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { appDescription } from './app/constants/index'
 import preload from './app/utils/preload'
 import { currentLocales } from './i18n/i18n'
@@ -13,8 +14,10 @@ export default defineNuxtConfig({
     'pinia-plugin-persistedstate/nuxt',
   ],
 
-  experimental: {
-    typedPages: true,
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.NUXT_PUBLIC_API_BASE,
+    },
   },
 
   css: [
@@ -93,6 +96,10 @@ export default defineNuxtConfig({
         'is-https',
       ],
     },
+  },
+
+  experimental: {
+    typedPages: true,
   },
 
   devtools: {
