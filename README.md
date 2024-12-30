@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 MD041 -->
 
-<div align="center">
+<div id="top" align="center">
 
 <img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
 
@@ -12,13 +12,15 @@ An mobile web apps template based on the Nuxt _⁴_ ecosystem.
 
 <p>
 <img src="https://img.shields.io/github/license/easy-temps/nuxt-vant-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/easy-temps/nuxt-vant-mobile" alt="version" />
 <img src="https://img.shields.io/github/repo-size/easy-temps/nuxt-vant-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/easy-temps/nuxt-vant-mobile" alt="languages" />
 <img src="https://img.shields.io/github/issues-closed/easy-temps/nuxt-vant-mobile" alt="issues" />
 </p>
 
 [文档](https://easy-temps.github.io/easy-docs/nuxt3-vant-mobile/) / [交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [反馈](https://github.com/easy-temps/nuxt-vant-mobile/issues)
 
-<a href="https://nuxt-vant-mobile.netlify.app">🖥 Online Preview</a>
+🖥 <a href="https://nuxt-vant-mobile.netlify.app">Online Preview</a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1eb0d3f7-69a1-4972-a2b7-9e317ffa5c63/deploy-status)](https://app.netlify.com/sites/nuxt-vant-mobile/deploys)
 
@@ -122,8 +124,13 @@ Your sponsorship will help us continue to iterate on this exciting project! 🚀
 <a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
 <a href="https://github.com/heked"><img src="https://avatars.githubusercontent.com/u/14127731?v=4" width="60px" alt="heked" /></a>
 <a href="https://github.com/topcnm"><img src="https://avatars.githubusercontent.com/u/8057893?v=4" width="60px" alt="topcnm" /></a>
+<a href="https://github.com/qiyue2015"><img src="https://avatars.githubusercontent.com/u/11554433?v=4" width="60px" alt="qiyue2015" /></a>
 </p>
 
 ## License
 
 [MIT](./LICENSE) License
+
+<p align="right">
+  <a href="#top">⬆️ Back to Top</a>
+</p>
