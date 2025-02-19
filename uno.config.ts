@@ -1,11 +1,11 @@
 import presetRemToPx from '@unocss/preset-rem-to-px'
+import presetWind3 from '@unocss/preset-wind3'
 
 import {
   defineConfig,
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
@@ -19,7 +19,7 @@ export default defineConfig({
   ],
 
   presets: [
-    presetUno(),
+    presetWind3(),
     presetAttributify(),
     presetIcons(),
     presetTypography(),
