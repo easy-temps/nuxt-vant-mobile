@@ -2,7 +2,7 @@
   "name": "nuxt-vant-mobile",
   "type": "module",
   "version": "0.3.2",
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.5.2",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -24,15 +24,15 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.3.0",
+    "@antfu/eslint-config": "^4.4.0",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@iconify-json/carbon": "^1.2.7",
+    "@iconify-json/carbon": "^1.2.8",
     "@nuxt/eslint": "^1.1.0",
     "@pinia/nuxt": "^0.10.1",
-    "@unocss/eslint-plugin": "66.1.0-beta.2",
-    "@unocss/nuxt": "66.1.0-beta.2",
-    "@unocss/preset-rem-to-px": "66.1.0-beta.2",
+    "@unocss/eslint-plugin": "66.1.0-beta.3",
+    "@unocss/nuxt": "66.1.0-beta.3",
+    "@unocss/preset-rem-to-px": "66.1.0-beta.3",
     "@vant/nuxt": "^1.0.6",
     "bumpp": "^10.0.3",
     "eslint": "^9.21.0",
@@ -41,20 +41,26 @@
     "pinia": "^3.0.1",
     "postcss-mobile-forever": "^4.4.0",
     "simple-git-hooks": "^2.11.1",
-    "typescript": "~5.7.3",
+    "typescript": "~5.8.2",
     "vant": "^4.9.17",
-    "vue-tsc": "^2.2.4"
+    "vue-tsc": "^2.2.8"
   },
   "pnpm": {
     "peerDependencyRules": {
       "allowedVersions": {
-        "vue-tsc": "^2.2.4"
+        "vue-tsc": "^2.2.8",
+        "typescript": "5.8.2"
       }
     },
     "allowedDeprecatedVersions": {
       "glob": "7.2.3",
       "inflight": "1.0.6"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "simple-git-hooks"
+    ]
   },
   "resolutions": {
     "vite": "^6.2.0"
