@@ -1,7 +1,7 @@
 {
   "name": "nuxt-vant-mobile",
   "type": "module",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "packageManager": "pnpm@10.6.2",
   "scripts": {
     "build": "nuxt build",
