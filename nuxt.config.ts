@@ -63,7 +63,8 @@ export default defineNuxtConfig({
     },
     langDir: 'locales',
     defaultLocale: 'zh-CN',
-    vueI18n: './i18n/i18n.config.ts',
+    // Reletive to the i18n directory
+    vueI18n: './i18n.config.ts',
   },
 
   app: {
