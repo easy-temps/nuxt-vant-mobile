@@ -39,9 +39,14 @@ export default defineNuxtConfig({
         // devtools excluded
         exclude: /@nuxt/,
         border: true,
+        // Need to convert fixed selector list
         rootContainingBlockSelectorList: [
-          'van-tabbar',
-          'van-popup',
+          '.van-tabbar',
+          '.van-popup',
+          '.van-popup--bottom',
+          '.van-popup--top',
+          '.van-popup--left',
+          '.van-popup--right',
         ],
       },
     },
