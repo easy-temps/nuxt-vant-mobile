@@ -104,7 +104,6 @@ export default defineNuxtConfig({
       include: [
         '@intlify/core-base',
         '@intlify/shared',
-        'is-https',
       ],
     },
   },
