@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "commitlint": "commitlint --edit",
-    "typecheck": "vue-tsc --noEmit",
+    "typecheck": "nuxi typecheck",
     "release": "bumpp --commit --push --tag"
   },
   "dependencies": {
