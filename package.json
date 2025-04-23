@@ -32,7 +32,6 @@
     "@pinia/nuxt": "^0.11.0",
     "@unocss/eslint-plugin": "66.1.0-beta.11",
     "@unocss/nuxt": "66.1.0-beta.11",
-    "@unocss/preset-rem-to-px": "66.1.0-beta.11",
     "@vant/nuxt": "^1.0.6",
     "bumpp": "^10.1.0",
     "eslint": "^9.24.0",

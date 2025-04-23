@@ -11,7 +11,7 @@ definePageMeta({
       {{ $t('unocss_page.hello', ['Unocss!']) }}
     </h1>
 
-    <p class="mt-10 text-gray-700 dark:text-white">
+    <p class="text-gray-700 mt-10 dark:text-white">
       {{ $t('unocss_page.desc') }}
     </p>
 

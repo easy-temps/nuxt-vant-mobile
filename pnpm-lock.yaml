@@ -54,9 +54,6 @@ importers:
       '@unocss/nuxt':
         specifier: 66.1.0-beta.11
         version: 66.1.0-beta.11(magicast@0.3.5)(postcss@8.5.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5(esbuild@0.25.2))
-      '@unocss/preset-rem-to-px':
-        specifier: 66.1.0-beta.11
-        version: 66.1.0-beta.11
       '@vant/nuxt':
         specifier: ^1.0.6
         version: 1.0.6(magicast@0.3.5)(vant@4.9.19(vue@3.5.13(typescript@5.8.3)))
@@ -1484,9 +1481,6 @@ packages:
 
   '@unocss/preset-mini@66.1.0-beta.11':
     resolution: {integrity: sha512-ioo0HTRjLU0qBnRCXITCMd3r2Eq6z5dbd36HVFBEPYYJEruNvWZRab+RBLpMgMG7Rjz0E/YI3mIqO9IjILfUIA==}
-
-  '@unocss/preset-rem-to-px@66.1.0-beta.11':
-    resolution: {integrity: sha512-5Zp2dcyagXUigNrcn5oWE5SZhn5fcv0MTXB03HAfPz7gL2jPI4wx0Arg4mxpQEUotBUFqf2H0fSvoXkkaJGkFw==}
 
   '@unocss/preset-tagify@66.1.0-beta.11':
     resolution: {integrity: sha512-wL3wHSedvPdCo0gDnLHT+uaXW3ZgpfSv5lXlnM/9a3SOc061DPSlwoYTYFiWD/Zq/Ar1ll00Zsr0HNDCOV2E9Q==}
@@ -6768,10 +6762,6 @@ snapshots:
       '@unocss/core': 66.1.0-beta.11
       '@unocss/extractor-arbitrary-variants': 66.1.0-beta.11
       '@unocss/rule-utils': 66.1.0-beta.11
-
-  '@unocss/preset-rem-to-px@66.1.0-beta.11':
-    dependencies:
-      '@unocss/core': 66.1.0-beta.11
 
   '@unocss/preset-tagify@66.1.0-beta.11':
     dependencies:

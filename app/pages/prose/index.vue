@@ -20,7 +20,7 @@ function clear() {
 
 <template>
   <div>
-    <div class="h-300 flex items-center justify-center rounded-15 bg-white p-16 dark:bg-[--van-background-2]">
+    <div class="p-16 rounded-15 bg-white flex h-300 items-center justify-center dark:bg-[--van-background-2]">
       <div v-if="proseStore.prose" class="text-16 leading-26">
         {{ proseStore.prose }}
       </div>

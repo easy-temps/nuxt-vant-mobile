@@ -19,7 +19,7 @@ function add() {
       Hello, Pinia!
     </h1>
 
-    <p class="mt-10 text-gray-700 dark:text-white">
+    <p class="text-gray-700 mt-10 dark:text-white">
       {{ $t('counter_page.label') }}
     </p>
 

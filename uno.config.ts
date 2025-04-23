@@ -1,5 +1,4 @@
-import presetRemToPx from '@unocss/preset-rem-to-px'
-import presetWind3 from '@unocss/preset-wind3'
+import { createRemToPxResolver } from '@unocss/preset-wind4/utils'
 
 import {
   defineConfig,
@@ -7,25 +6,33 @@ import {
   presetIcons,
   presetTypography,
   presetWebFonts,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
 
-// https://unocss.dev/guide/config-file
+/**
+ * The base font size to convert rem to px (1rem = n px).
+ */
+const BASE_FONT_SIZE = 4
+
 export default defineConfig({
   shortcuts: [
-    // shortcuts to multiple utilities
     ['btn', 'px-6 py-3 rounded-3 inline-block bg-primary text-white cursor-pointer hover:bg-primary-hover disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
   ],
 
   presets: [
-    presetWind3(),
+    presetWind4({
+      /**
+       * Converts rem to px for all utilities
+       */
+      utilityResolver: createRemToPxResolver(BASE_FONT_SIZE),
+    }),
     presetAttributify(),
     presetIcons(),
     presetTypography(),
-    presetWebFonts(),
-    presetRemToPx({
-      baseFontSize: 4,
+    presetWebFonts({
+      themeKey: 'font',
     }),
   ],
 
