@@ -1,4 +1,4 @@
-import { createRemToPxResolver } from '@unocss/preset-wind4/utils'
+import { createRemToPxProcessor } from '@unocss/preset-wind4/utils'
 
 import {
   defineConfig,
@@ -26,7 +26,11 @@ export default defineConfig({
       /**
        * Converts rem to px for all utilities
        */
-      utilityResolver: createRemToPxResolver(BASE_FONT_SIZE),
+      preflights: {
+        theme: {
+          process: createRemToPxProcessor(BASE_FONT_SIZE),
+        },
+      },
     }),
     presetAttributify(),
     presetIcons(),
@@ -34,6 +38,10 @@ export default defineConfig({
     presetWebFonts({
       themeKey: 'font',
     }),
+  ],
+
+  postprocess: [
+    createRemToPxProcessor(BASE_FONT_SIZE),
   ],
 
   transformers: [
