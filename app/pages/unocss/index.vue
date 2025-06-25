@@ -15,7 +15,7 @@ definePageMeta({
       {{ $t('unocss_page.desc') }}
     </p>
 
-    <button class="mt-10 btn">
+    <button class="btn mt-10">
       {{ $t('unocss_page.btn_txt') }}
     </button>
   </div>
