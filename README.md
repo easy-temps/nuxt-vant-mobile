@@ -65,6 +65,8 @@ We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https:
 
 ## Try it now
 
+> nuxt-vant-mobile requires Node 20+
+
 ### GitHub Template
 
 [Create a repo from this template on GitHub](https://github.com/easy-temps/nuxt-vant-mobile/generate)
