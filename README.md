@@ -2,7 +2,7 @@
 
 <div id="top" align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
+<img src="https://cdn.jsdelivr.net/gh/vue-zone/static/cover.png" alt="cover" />
 
 <h1 align="center">nuxt-vant-mobile</h1>
 
@@ -11,14 +11,14 @@ An mobile web apps template based on the Nuxt _⁴_ ecosystem.
 一个基于 Nuxt _⁴_ 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
 
 <p>
-<img src="https://img.shields.io/github/license/easy-temps/nuxt-vant-mobile" alt="license" />
-<img src="https://img.shields.io/github/package-json/v/easy-temps/nuxt-vant-mobile" alt="version" />
-<img src="https://img.shields.io/github/repo-size/easy-temps/nuxt-vant-mobile" alt="repo-size" />
-<img src="https://img.shields.io/github/languages/top/easy-temps/nuxt-vant-mobile" alt="languages" />
-<img src="https://img.shields.io/github/issues-closed/easy-temps/nuxt-vant-mobile" alt="issues" />
+<img src="https://img.shields.io/github/license/vue-zone/nuxt-vant-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/vue-zone/nuxt-vant-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/vue-zone/nuxt-vant-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/vue-zone/nuxt-vant-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/vue-zone/nuxt-vant-mobile" alt="issues" />
 </p>
 
-[🌐预览](https://nuxt-vant-mobile.netlify.app) / [📖文档](https://easy-temps.github.io/easy-docs/nuxt3-vant-mobile/) / [🗨️交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [📝反馈](https://github.com/easy-temps/nuxt-vant-mobile/issues)
+[🌐预览](https://nuxt-vant-mobile.netlify.app) / [📖文档](https://vue-zone.github.io/docs/nuxt3-vant-mobile/) / [🗨️交流](https://github.com/vue-zone/vue3-vant-mobile/issues/56) / [📝反馈](https://github.com/vue-zone/nuxt-vant-mobile/issues)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1eb0d3f7-69a1-4972-a2b7-9e317ffa5c63/deploy-status)](https://app.netlify.com/sites/nuxt-vant-mobile/deploys)
 
@@ -69,14 +69,14 @@ We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https:
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/easy-temps/nuxt-vant-mobile/generate)
+[Create a repo from this template on GitHub](https://github.com/vue-zone/nuxt-vant-mobile/generate)
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx tiged easy-temps/nuxt-vant-mobile my-nuxt-app
+npx tiged vue-zone/nuxt-vant-mobile my-nuxt-app
 cd my-nuxt-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
@@ -107,7 +107,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 ## Community 👏
 
-We recommend that [issue](https://github.com/easy-temps/nuxt-vant-mobile/issues) be used for problem feedback, or [Wechat group](https://github.com/easy-temps/vue3-vant-mobile/issues/56).
+We recommend that [issue](https://github.com/vue-zone/nuxt-vant-mobile/issues) be used for problem feedback, or [Wechat group](https://github.com/vue-zone/vue3-vant-mobile/issues/56).
 
 ## Donation ☕
 
