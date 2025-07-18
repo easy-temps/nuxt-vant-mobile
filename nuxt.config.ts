@@ -60,7 +60,6 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: currentLocales,
-    lazy: true,
     strategy: 'no_prefix',
     detectBrowserLanguage: {
       useCookie: true,
@@ -69,11 +68,6 @@ export default defineNuxtConfig({
     defaultLocale: 'zh-CN',
     // Reletive to the i18n directory
     vueI18n: './i18n.config.ts',
-
-    bundle: {
-      // https://github.com/nuxt-modules/i18n/issues/3238#issuecomment-2672492536
-      optimizeTranslationDirective: false,
-    },
   },
 
   app: {
@@ -130,9 +124,5 @@ export default defineNuxtConfig({
     },
   },
 
-  future: {
-    compatibilityVersion: 4,
-  },
-
-  compatibilityDate: '2024-09-24',
+  compatibilityDate: '2025-07-18',
 })

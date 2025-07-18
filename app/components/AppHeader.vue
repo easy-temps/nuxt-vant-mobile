@@ -16,7 +16,7 @@ const { t } = useI18n()
 const title = computed(() => {
   if (!route.meta)
     return ''
-  return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
+  return route.meta.i18n_key ? t(route.meta.i18n_key) : (route.meta.title || '')
 })
 
 const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name))
@@ -26,7 +26,7 @@ const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route
   <VanNavBar
     :title="title"
     :left-arrow="!showLeftArrow"
-    placeholder clickable fixed
+    clickable placeholder fixed
     @click-left="onBack"
   />
 </template>

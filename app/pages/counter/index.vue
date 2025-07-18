@@ -3,7 +3,7 @@ import useCounter from '~/composables/counter'
 
 definePageMeta({
   title: '🍍 持久化 Pinia 状态',
-  i18n: 'menu.persistPiniaState',
+  i18n_key: 'menu.persistPiniaState',
 })
 
 const counter = useCounter()

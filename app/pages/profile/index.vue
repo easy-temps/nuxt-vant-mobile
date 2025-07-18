@@ -2,7 +2,7 @@
 definePageMeta({
   layout: 'default',
   title: '我的',
-  i18n: 'menu.profile',
+  i18n_key: 'menu.profile',
 })
 </script>
 

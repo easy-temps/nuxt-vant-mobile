@@ -7,7 +7,7 @@ definePageMeta({
   name: 'Keepalive',
   keepalive: true,
   title: '🧡 KeepAlive',
-  i18n: 'menu.keepAlive',
+  i18n_key: 'menu.keepAlive',
 })
 
 const value = ref(1)

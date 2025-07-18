@@ -3,7 +3,7 @@ declare module 'vue-router' {
     /** page title */
     title?: string
     /** i18n key */
-    i18n?: string
+    i18n_key?: string
   }
 }
 

@@ -7,7 +7,7 @@ import { Locale } from 'vant'
 definePageMeta({
   layout: 'default',
   title: '主页',
-  i18n: 'menu.home',
+  i18n_key: 'menu.home',
 })
 
 const color = useColorMode()
