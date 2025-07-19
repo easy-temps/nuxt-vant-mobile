@@ -1,7 +1,20 @@
 {
-  "menu": {
+  "navbar": {
+    "Home": "主页",
+    "Counter": "持久化 Pinia 状态",
+    "Profile": "我的",
+    "Prose": "网络请求",
+    "Unocss": "Unocss 示例",
+    "Keepalive": "KeepAlive 演示",
+    "Undefined": "未定义标题"
+  },
+
+  "tabbar": {
     "home": "主页",
-    "profile": "我的",
+    "profile": "我的"
+  },
+
+  "menu": {
     "darkMode": "🌗 暗黑模式",
     "language": "📚 语言",
     "404Demo": "🙅 404页 演示",
@@ -10,30 +23,32 @@
     "persistPiniaState": "💾 持久化 Pinia 状态",
     "fetch": "🏄 网络请求"
   },
-  "tabbar": {
-    "home": "主页",
-    "profile": "我的"
-  },
+
   "unocss_page": {
     "hello": "你好 {0}",
     "desc": "这是 unocss 一个简单例子。",
     "btn_txt": "按钮"
   },
+
   "error_page": {
     "back_btn": "返回",
     "txt": "没有找到"
   },
+
   "profile_page": {
     "txt": "未完成"
   },
+
   "keepalive_page": {
     "label": "当前组件将会被缓存"
   },
+
   "counter_page": {
     "label": "这是一个简单的持久化 Pinia 状态的例子。为了验证其有效性，你可以刷新界面并观察它。",
     "label_num": "数字",
     "btn_add": "增加"
   },
+
   "prose_page": {
     "btn_fetch": "拉取",
     "btn_clear": "清空",

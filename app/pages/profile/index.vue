@@ -1,8 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'default',
-  title: '我的',
-  i18n_key: 'menu.profile',
+  name: 'Profile',
 })
 </script>
 

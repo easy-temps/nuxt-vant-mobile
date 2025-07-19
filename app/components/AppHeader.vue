@@ -13,20 +13,38 @@ function onBack() {
 
 const { t } = useI18n()
 
+/**
+ * Get page title
+ * Located in i18n/locales/json
+ */
 const title = computed(() => {
-  if (!route.meta)
-    return ''
-  return route.meta.i18n_key ? t(route.meta.i18n_key) : (route.meta.title || '')
+  if (route.name) {
+    return t(`navbar.${route.name}`)
+  }
+
+  return t('navbar.Undefined')
 })
 
-const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name))
+/**
+ * Display the left arrow
+ * If route name is in route white list, display left arrow
+ */
+const showLeftArrow = computed(() => {
+  if (route.name && routeWhiteList.includes(route.name)) {
+    return true
+  }
+
+  return false
+})
 </script>
 
 <template>
-  <VanNavBar
+  <van-nav-bar
     :title="title"
+    clickable
+    placeholder
+    fixed
     :left-arrow="!showLeftArrow"
-    clickable placeholder fixed
     @click-left="onBack"
   />
 </template>

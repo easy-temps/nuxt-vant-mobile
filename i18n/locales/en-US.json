@@ -1,7 +1,20 @@
 {
-  "menu": {
+  "navbar": {
+    "Home": "Home",
+    "Counter": "Persist Pinia State",
+    "Profile": "Profile",
+    "Prose": "Network Request",
+    "Unocss": "Unocss Example",
+    "Keepalive": "KeepAlive Demo",
+    "Undefined": "Undefined title"
+  },
+
+  "tabbar": {
     "home": "Home",
-    "profile": "Profile",
+    "profile": "Profile"
+  },
+
+  "menu": {
     "darkMode": "🌗 Dark Mode",
     "language": "📚 Language",
     "404Demo": "🙅 Page 404 Demo",
@@ -10,30 +23,32 @@
     "persistPiniaState": "💾 Persist Pinia State",
     "fetch": "🏄 Network Request"
   },
-  "tabbar": {
-    "home": "Home",
-    "profile": "Profile"
-  },
+
   "unocss_page": {
     "hello": "Hello {0}",
     "desc": "This is a simple example of Unocss in action.",
     "btn_txt": "Button"
   },
+
   "error_page": {
     "back_btn": "Back",
     "txt": "Not found"
   },
+
   "profile_page": {
     "txt": "WIP"
   },
+
   "keepalive_page": {
     "label": "The current component will be cached"
   },
+
   "counter_page": {
     "label": "This is a simple example of persisting Pinia state. To verify its effectiveness, you can refresh the interface and observe it.",
     "label_num": "Number",
     "btn_add": "Add"
   },
+
   "prose_page": {
     "btn_fetch": "Fetch",
     "btn_clear": "Clear",

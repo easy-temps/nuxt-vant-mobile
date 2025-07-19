@@ -3,8 +3,7 @@ import { useProseStore } from '~/stores/prose'
 
 definePageMeta({
   layout: 'default',
-  title: '随笔',
-  i18n_key: 'menu.fetch',
+  name: 'Prose',
 })
 
 const proseStore = useProseStore()

@@ -97,6 +97,8 @@ export default defineNuxtConfig({
       include: [
         '@intlify/core-base',
         '@intlify/shared',
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
       ],
     },
   },
