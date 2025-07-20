@@ -1,7 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  title: '🎨 Unocss 示例',
-  i18n: 'menu.unocssExample',
+  name: 'Unocss',
 })
 </script>
 

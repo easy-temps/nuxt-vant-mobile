@@ -6,8 +6,6 @@ defineOptions({
 definePageMeta({
   name: 'Keepalive',
   keepalive: true,
-  title: '🧡 KeepAlive',
-  i18n: 'menu.keepAlive',
 })
 
 const value = ref(1)
